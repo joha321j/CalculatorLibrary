@@ -8,44 +8,52 @@ namespace CalculatorLibrary
 {
     public class Calculator
     {
-        public static int Add(int v1, int v2)
+        public static double Add(double v1, double v2)
         {
             throw new NotImplementedException();
         }
 
-        public static object Subtract(double v1, double v2)
+        public static double Subtract(double v1, double v2)
         {
-            throw new NotImplementedException();
+            return v1 - v2;
         }
 
-        public static object Multiply(double v1, double v2)
+        public static double Multiply(double v1, double v2)
         {
             throw new NotImplementedException();
         }
 
         public static double Divide(double v1, double v2)
         {
-            throw new NotImplementedException();
+            return v1 / v2;
         }
 
-        public static int Sum(double[] numbers)
+        public static double Sum(double[] numbers)
         {
             throw new NotImplementedException();
         }
 
         public static double Minimum(double[] numbers)
         {
-            throw new NotImplementedException();
+            double minimum = numbers[0];
+            for (int i = 1; i < numbers.Length; i++)
+            {
+                if (numbers[i]<minimum)
+                {
+                    minimum = numbers[i];
+                }
+            }
+            return minimum;
         }
 
-        public static int Maximum(double[] numbers)
+        public static double Maximum(double[] numbers)
         {
             throw new NotImplementedException();
         }
 
-        public static object Average(double[] numbers)
+        public static double Average(double[] numbers)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
