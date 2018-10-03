@@ -57,12 +57,26 @@ namespace CalculatorLibrary
 
         public static double Maximum(double[] numbers)
         {
-            
+            double res = 0;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if(res < numbers[i])
+                {
+                    res = numbers[i];
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            return res;
         }
 
-        public static double Average(double[] numbers)
+    /*    public static double Average(double[] numbers)
         {
             
         }
+     */   
     }
 }
