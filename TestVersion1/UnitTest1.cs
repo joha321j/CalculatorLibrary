@@ -18,28 +18,28 @@ namespace TestVersion1
             Assert.AreEqual(208.2, Calculator.Add(148.3, 59.9), delta); 
         } 
 
-        /*
+        
       [TestMethod]
         public void TestSubtract()
         {
             Assert.AreEqual(5.5, Calculator.Subtract(10.3, 4.8), delta);
             Assert.AreEqual(10.0, Calculator.Subtract(20.1, 10.1), delta);
         }
-        */
+        
         [TestMethod]
         public void TestMultiply()
         {
             Assert.AreEqual(49.44, Calculator.Multiply(10.3, 4.8), delta);
             Assert.AreEqual(203.01, Calculator.Multiply(20.1, 10.1), delta);
         }
-        /*
+        
         [TestMethod]
         public void TestDivide()
         {
             Assert.AreEqual(2.5, Calculator.Divide(11.5, 4.6));
             Assert.AreEqual(2.0, Calculator.Divide(20.2, 10.1));
         }
-        */
+        
         [TestMethod]
         public void TestSum()
         {
@@ -53,7 +53,7 @@ namespace TestVersion1
             Assert.AreEqual(19, Calculator.Sum(numbers));
 
         }
-        /*
+        
         [TestMethod]
         public void TestMinimum()
         {
@@ -64,7 +64,7 @@ namespace TestVersion1
             numbers[3] = -65.3;
             Assert.AreEqual(-65.3, Calculator.Minimum(numbers));
         }
-        */
+        
         [TestMethod]
         public void TestMaximum()
         {
@@ -75,7 +75,7 @@ namespace TestVersion1
             numbers[4] = -65.3;
             Assert.AreEqual(90.2, Calculator.Maximum(numbers));
         }
-        /*
+        
         [TestMethod]
         public void TestAverage()
         {
@@ -87,7 +87,7 @@ namespace TestVersion1
             Assert.AreEqual(195.84, Calculator.Average(numbers));
             
         }
-        */
+        
     }
     
 }

@@ -57,12 +57,12 @@ namespace CalculatorLibrary
 
         public static double Maximum(double[] numbers)
         {
-            
+            return 1;
         }
 
         public static double Average(double[] numbers)
         {
-            
+            return Divide(Sum(numbers), numbers.Length);  
         }
     }
 }
