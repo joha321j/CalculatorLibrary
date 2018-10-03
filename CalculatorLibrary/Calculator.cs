@@ -26,7 +26,7 @@ namespace CalculatorLibrary
         }
 
         public static double Divide(double v1, double v2)
-        {
+        {   // dividerer v1 med v2
             return v1 / v2;
         }
 
@@ -73,11 +73,9 @@ namespace CalculatorLibrary
             return res;
         }
 
-    /*    public static double Average(double[] numbers)
+        public static double Average(double[] numbers)
         {
             return Divide(Sum(numbers), numbers.Length);  
-            
         }
-     */   
     }
 }
