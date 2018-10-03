@@ -8,9 +8,10 @@ namespace CalculatorLibrary
 {
     public class Calculator
     {
-        public static int Add(int v1, int v2)
+        public static double Add(double v1, double v2)
         {
-            throw new NotImplementedException();
+            // lægger 2  tal sammen.
+             return v1 + v2;           
         }
 
         public static object Subtract(double v1, double v2)
@@ -18,9 +19,10 @@ namespace CalculatorLibrary
             throw new NotImplementedException();
         }
 
-        public static object Multiply(double v1, double v2)
+        public static double Multiply(double v1, double v2)
         {
-            throw new NotImplementedException();
+            // ganger 2  tal 
+            return v1 * v2;
         }
 
         public static double Divide(double v1, double v2)
@@ -28,9 +30,16 @@ namespace CalculatorLibrary
             throw new NotImplementedException();
         }
 
-        public static int Sum(double[] numbers)
+        public static double Sum(double[] numbers)
         {
-            throw new NotImplementedException();
+            double res = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                // resultat 
+                res = res + numbers[i];  
+
+            }
+            return res;
         }
 
         public static double Minimum(double[] numbers)
