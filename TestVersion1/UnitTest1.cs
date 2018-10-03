@@ -64,6 +64,7 @@ namespace TestVersion1
             numbers[3] = -65.3;
             Assert.AreEqual(-65.3, Calculator.Minimum(numbers));
         }
+        */
         [TestMethod]
         public void TestMaximum()
         {
@@ -74,6 +75,7 @@ namespace TestVersion1
             numbers[4] = -65.3;
             Assert.AreEqual(90.2, Calculator.Maximum(numbers));
         }
+        /*
         [TestMethod]
         public void TestAverage()
         {

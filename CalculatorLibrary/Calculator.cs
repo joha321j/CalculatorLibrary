@@ -47,9 +47,9 @@ namespace CalculatorLibrary
             throw new NotImplementedException();
         }
 
-        public static int Maximum(double[] numbers)
+        public static double Maximum(double[] numbers)
         {
-            throw new NotImplementedException();
+            
         }
 
         public static object Average(double[] numbers)
