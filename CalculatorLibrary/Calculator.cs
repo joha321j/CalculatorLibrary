@@ -57,17 +57,13 @@ namespace CalculatorLibrary
 
         public static double Maximum(double[] numbers)
         {
-            double res = 0;
+            double res = numbers[0];
 
-            for (int i = 0; i < numbers.Length; i++)
+            for (int i = 1; i < numbers.Length; i++)
             {
                 if(res < numbers[i])
                 {
                     res = numbers[i];
-                }
-                else
-                {
-                    continue;
                 }
             }
             return res;
@@ -77,5 +73,62 @@ namespace CalculatorLibrary
         {
             return Divide(Sum(numbers), numbers.Length);  
         }
+
+        //public static double Expression(string v)
+        //{
+        //    v = v.Replace(',', '.');
+        //    v = v.Replace(" ", string.Empty);
+        //    string numberString = string.Empty;
+        //    double numberOne = 0;
+        //    double numberTwo = 0;
+        //    double result = 0;
+        //    string mathSymbol = string.Empty;
+
+
+        //    for (int i = 0; i < v.Length; i++)
+        //    {
+        //        if (char.IsNumber(v[i]))
+        //        {
+        //            while (v[i] != ' ' ||
+        //                   v[i] != '+' ||
+        //                   v[i] != '-')
+        //            {
+        //                numberString += v[i];
+        //                i++;
+        //            }
+        //            double.TryParse(numberString, out numberOne);
+        //        }
+        //        else if (v[i] == '+')
+        //        {
+        //            mathSymbol = "add";
+        //        }
+        //        else if (v[i] == '-')
+        //        {
+        //            mathSymbol = "subtract";
+        //        }
+        //        if (char.IsNumber(v[i]))
+        //        {
+        //            while (v[i] != ' ' ||
+        //                   v[i] != '+' ||
+        //                   v[i] != '-')
+        //            {
+        //                numberString += v[i];
+        //                i++;
+        //            }
+        //            double.TryParse(numberString, out numberTwo);
+        //        }
+
+        //        if (mathSymbol == "add")
+        //        {
+        //            result += Add(numberOne, numberTwo);
+        //        }
+        //        else if (mathSymbol == "subtract")
+        //        {
+        //            result += Subtract(numberOne, numberTwo);
+        //        }
+        //    }
+            
+        //    return result;
+        //}
     }
 }
